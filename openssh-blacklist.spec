@@ -2,12 +2,11 @@
 Summary:	List of blacklisted OpenSSH RSA and DSA keys
 Name:		openssh-blacklist
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	GPLv3
 Group:		Applications
 Source0:	http://ftp.debian.org/debian/pool/main/o/openssh-blacklist/%{name}_%{version}.tar.gz
 # Source0-md5:	726869883bff9953537b2a07bbfef3c8
-Suggests:	openssh >= 2:5.0p1-5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
