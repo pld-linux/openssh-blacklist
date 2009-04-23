@@ -2,11 +2,12 @@ Summary:	List of blacklisted OpenSSH RSA and DSA keys
 Summary(pl):	Lista niepożądanych kluczy RSA i DSA
 Name:		openssh-blacklist
 Version:	0.4.1
-Release:	2
+Release:	3
 License:	GPLv3
 Group:		Applications
 Source0:	http://ftp.debian.org/debian/pool/main/o/openssh-blacklist/%{name}_%{version}.tar.gz
 # Source0-md5:	397861288debb71ebdbe4adade033f85
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,8 +25,7 @@ generatora liczb losowych w pakiecie OpenSSL.
 
 %build
 mkdir tmp
-
-for i in `ls [RD]SA-* | cut -d. -f1 | sort -u`; do
+for i in $(ls [RD]SA-* | cut -d. -f1 | sort -u); do
 	cat debian/blacklist.prefix > tmp/blacklist.$i
 	cat $i.* | cut -b13- | sort >> tmp/blacklist.$i
 done
