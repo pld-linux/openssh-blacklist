@@ -3,7 +3,7 @@ Summary(pl):	Lista niepożądanych kluczy RSA i DSA
 Name:		openssh-blacklist
 Version:	0.4.1
 Release:	3
-License:	GPLv3
+License:	GPL v3
 Group:		Applications
 Source0:	http://ftp.debian.org/debian/pool/main/o/openssh-blacklist/%{name}_%{version}.tar.gz
 # Source0-md5:	397861288debb71ebdbe4adade033f85
