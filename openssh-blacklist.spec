@@ -1,5 +1,5 @@
 Summary:	List of blacklisted OpenSSH RSA and DSA keys
-Summary(pl):	Lista niepożądanych kluczy RSA i DSA
+Summary(pl.UTF-8):	Lista niepożądanych kluczy RSA i DSA
 Name:		openssh-blacklist
 Version:	0.4.1
 Release:	3
